@@ -1,0 +1,34 @@
+<Messages>
+  <Languages>
+    <Language>ar</Language>
+    <Language>en</Language>
+  </Languages>
+  <Message Code="Demo500ISE" Name="InternalServerError" Status="InternalServerError">
+    <ar>حدث خطأ في السيرفر.</ar>
+    <en>Unknown error in server.</en>
+  </Message>
+  <Message Code="Demo400ENR" Name="EmployeeNameRequired" Status="BadRequest">
+    <ar>اسم الموظف مطلوب.</ar>
+    <en>Employee name required.</en>
+  </Message>
+  <Message Code="Demo400EAR" Name="EmployeeAgeRequired" Status="BadRequest">
+    <ar>عمر الموظف مطلوب.</ar>
+    <en>Employee age required.</en>
+  </Message>
+  <Message Code="Demo400ETR" Name="EmployeeTypeRequired" Status="BadRequest">
+    <ar>نوع الموظف مطلوب.</ar>
+    <en>Employee type required.</en>
+  </Message>
+  <Message Code="Demo404ENF" Name="EmployeeNotFound" Status="NotFound">
+    <ar>لم يتم العثور على الموظف.</ar>
+    <en>Employee not found.</en>
+  </Message>
+  <Message Code="Demo200EUS" Name="EmployeeUpdatedSuccessfully" Status="OK">
+    <ar>تم تحديث معلومات الموضف بنجاح.</ar>
+    <en>Employee info updated successfully.</en>
+  </Message>
+  <Message Code="Demo200EDS" Name="EmployeeDeletedSuccessfully" Status="OK">
+    <ar>تم حذف معلومات الموضف بنجاح.</ar>
+    <en>Employee info deleted successfully.</en>
+  </Message>
+</Messages>
