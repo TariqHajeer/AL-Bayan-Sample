@@ -34,20 +34,20 @@ You need to create environment variable for making connection string. Storeak Co
 > 
 
 
-***In wwwroot folder you need to create xml file in App_Data folder that handle multilanguage messages.***
+***In wwwroot/App_Data folder you need to create xml file that handle multilanguage messages.***
 
 > 
 
-***In Business Use Cases you need to create (Create,Update,Delete) Operations***
+***In Application/BusinessUseCases you need to create (Create,Update,Delete) Operations***
 
 > 
 
-***In Queries you need to create select operations.***
+***In Application/Queries you need to create select operations.***
 
 
 > 
 
-***In Unit of work you need to create repositories.***
+***In Application/UnitOfWork you need to create repositories.***
 > 
 > 
 ***In Controller you need to create all apis crud.***
@@ -60,10 +60,10 @@ You need to create environment variable for making connection string. Storeak Co
 ***In Infrastructure/Mapping you need to create configuration of entities.***
 
 
-***In DemoContext you need to create project db context and inherit with core store db context class to inherit all db methods for database interaction.***
+***In Infrastructure/DemoContext you need to create project db context and inherit with core store db context class to inherit all db methods for database interaction.***
 
 
-***In ResponseMessage you need to add messages variables that return message based on language (Multilanguage handling).***
+***In Infrastructure/ResponseMessages you need to add messages variables that return message based on language (Multilanguage handling).***
 
 
 ***In Models you need to create Api Request and Response models.***
