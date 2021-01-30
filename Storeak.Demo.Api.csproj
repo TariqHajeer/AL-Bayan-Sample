@@ -8,10 +8,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\ERP Core\Storeak.Api.Core\StoreakApiService.Common\Storeak.Core.csproj" />
+    <PackageReference Include="Storeak.Api.Core" Version="1.6.89" />
   </ItemGroup>
 
 </Project>
