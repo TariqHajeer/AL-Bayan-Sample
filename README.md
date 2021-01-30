@@ -41,45 +41,19 @@ to add these varables:
 > 
 
 
-***In wwwroot/App_Data folder you need to create xml file that handle multilanguage messages.***
+> * **wwwroot/App_Data** have xml file that handle multilanguage messages.
+> * **Application/BusinessUseCases** have (Create,Update,Delete) Operations
+> * **Application/Queries** have select operations.
+> * **Application/UnitOfWork** have the repositories.
+> * **Controllers** have the apis crud.
+> * **Infrastructure/DataModels** have database entities(DTO).
+> * **Infrastructure/Mapping** have configuration of entities.
+> * **Infrastructure/DemoContext** have dbset with entity configuration (mapping) also inherit with core store db context class to inherit all db methods for database interaction.
+> * **Infrastructure/ResponseMessages** have messages variables that return message based on language (Multilanguage handling) that created in xml file.
+> * **Models** have Api Request and Response models.
+> * **MapperProfile** have the auto mapping between the entities and models.
+> * **Startup** is inherit core startup class and configure your project setting(dependencies resolver,mappers,database etc)
 
-> 
-
-***In Application/BusinessUseCases you need to create (Create,Update,Delete) Operations***
-
-> 
-
-***In Application/Queries you need to create select operations.***
-
-
-> 
-
-***In Application/UnitOfWork you need to add repositories.***
-> 
-> 
-***In Controller you need to create all apis crud.***
-
-
-
-***In Infrastructure/DataModels path you need to create database entities(DTO).***
-> 
-
-***In Infrastructure/Mapping you need to create configuration of entities.***
-
-
-***In Infrastructure/DemoContext you need to add dbset with entity configuration (mapping) also inherit with core store db context class to inherit all db methods for database interaction.***
-
-
-***In Infrastructure/ResponseMessages you need to add messages variables that return message based on language (Multilanguage handling).***
-
-
-***In Models you need to create Api Request and Response models.***
-
-***In MapperProfile you need to add mapping of entities using automapper.***
-
-
-***In Startup you need to inherit core startup class and configure your project setting(dependencies resolver,mappers,database etc)***
-
-
-Postman collection link that wrapp this project apis https://www.storeakmedia.com/theme/GitStoreakDemoApi/Storeak.Demo.Api.postman_collection.json
+# **Postman Collection**
+ you can download a **Postman collection** that wrapp this project apis from this [link]( https://www.storeakmedia.com/theme/GitStoreakDemoApi/Storeak.Demo.Api.postman_collection.json)
 
