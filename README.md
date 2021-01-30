@@ -54,19 +54,19 @@ You need to create environment variable for making connection string. Storeak Co
 
 
 
-***In DataModel you need to create database entities(DTO).***
+***In Infrastructure/DataModels path you need to create database entities(DTO).***
 > 
 
-***In Mapping you need to create configuration of entities.***
+***In Infrastructure/Mapping you need to create configuration of entities.***
 
 
-***In News context you need to create project db context and inherit with core store db context class to inherit all db methods for database interaction.***
+***In DemoContext you need to create project db context and inherit with core store db context class to inherit all db methods for database interaction.***
 
 
 ***In ResponseMessage you need to add messages variables that return message based on language (Multilanguage handling).***
 
 
-***In Models you need to create Api Response models.***
+***In Models you need to create Api Request and Response models.***
 
 ***In MapperProfile you need to add mapping of entities using automapper.***
 
