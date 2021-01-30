@@ -47,7 +47,7 @@ You need to create environment variable for making connection string. Storeak Co
 
 > 
 
-***In Application/UnitOfWork you need to create repositories.***
+***In Application/UnitOfWork you need to add repositories.***
 > 
 > 
 ***In Controller you need to create all apis crud.***
@@ -60,7 +60,7 @@ You need to create environment variable for making connection string. Storeak Co
 ***In Infrastructure/Mapping you need to create configuration of entities.***
 
 
-***In Infrastructure/DemoContext you need to create project db context and inherit with core store db context class to inherit all db methods for database interaction.***
+***In Infrastructure/DemoContext you need to add dbset with entity configuration (mapping) also inherit with core store db context class to inherit all db methods for database interaction.***
 
 
 ***In Infrastructure/ResponseMessages you need to add messages variables that return message based on language (Multilanguage handling).***
