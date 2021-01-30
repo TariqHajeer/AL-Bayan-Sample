@@ -32,7 +32,7 @@ to add these varables:
 > * **AzurePool_DataSource** : Database Server Name
 > * **AzurePool_UserID** :  Database Server User Id
 > * **AzurePool_Password** :  Database Server Password
-> * **enco**: set to empty
+> * **enco** : set to empty
 
 # **Project Folder Structure (Demo project):**
 > 
