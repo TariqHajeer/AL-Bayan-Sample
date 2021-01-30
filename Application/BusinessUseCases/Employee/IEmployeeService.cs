@@ -3,7 +3,7 @@ using StoreakApiService.Core.Responses;
 using System;
 using System.Threading.Tasks;
 
-namespace Storeak.Demo.Api.Application.BusinessUseCases.AppDevice
+namespace Storeak.Demo.Api.Application.BusinessUseCases.Employee
 {
     public interface IEmployeeService
     {

@@ -14,8 +14,4 @@
     <ProjectReference Include="..\..\ERP Core\Storeak.Api.Core\StoreakApiService.Common\Storeak.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Application\Queries\" />
-  </ItemGroup>
-
 </Project>

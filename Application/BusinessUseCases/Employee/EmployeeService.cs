@@ -1,15 +1,12 @@
 using StoreakApiService.Core.Responses;
 using System;
 using AutoMapper;
-using Storeak.Models.Identity.BusinessUseCases.AppDevice;
 using System.Threading.Tasks;
-using Storeak.Demo.Api.Application.BusinessUseCases.AppDevice;
 using Storeak.Demo.Api.Infrastructure;
-using Storeak.Demo.Api.Application;
 using Storeak.Models.Demo.BusinessUseCases.Employee;
 using Storeak.Demo.Api.Infrastructure.DataModel;
 
-namespace Storeak.Identity.Demo.Application.BusinessUseCases.AppDevice
+namespace Storeak.Demo.Api.Application.BusinessUseCases.Employee
 {
     public class EmployeeService : IEmployeeService
     {
@@ -40,9 +37,15 @@ namespace Storeak.Identity.Demo.Application.BusinessUseCases.AppDevice
             {
                 return _responsMessages.EmployeeNotFound;
             }
+
+            // should check if emplyee have some realted records in some other tables
+            // like this example
+            //if (_unitOfWork.VisitsRepository.Where(x => x.EmployeeId == appDeviceDto.Id).Count() > 0)
+            //    return _responsMessages.EmployeeHasRelatedRecords; // badRequest
+
             _unitOfWork.EmployeeRepository.Remove(appDeviceDto);
             await _unitOfWork.SaveChangesAsync();
-            return _responsMessages.EmployeeUpdatedSuccessfully;
+            return _responsMessages.EmployeeDeletedSuccessfully;
         }
 
         public async Task<CustomResponse> Update(Guid id, UpdateEmployeeModel UpdateRequest)

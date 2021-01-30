@@ -7,8 +7,9 @@ using System;
 using Storeak.Demo.Api.Infrastructure.DataModel;
 using StoreakApiService.Core.Context;
 using System.Linq;
+using System.Threading.Tasks;
 
-namespace Storeak.Identity.Api.Application.Queries.Application
+namespace Storeak.Demo.Api.Application.Queries.Employee
 {
     public class EmployeeQueries
     {
@@ -23,9 +24,9 @@ namespace Storeak.Identity.Api.Application.Queries.Application
             _unitOfWork = unitOfWork;
         }
 
-        public CustomResponse Get(Guid id)
+        public async Task<CustomResponse> Get(Guid id)
         {
-            EmployeeDto employee = _unitOfWork.EmployeeRepository.Find(id);
+            EmployeeDto employee = await _unitOfWork.EmployeeRepository.FindAsync(id);
             if (employee == null)
                 return _responsMessages.EmployeeNotFound;
 
@@ -34,12 +35,12 @@ namespace Storeak.Identity.Api.Application.Queries.Application
             return new OkResponse(model);
         }
 
-        public CustomResponse GetAll(PagingParams pagingParams)
+        public async Task<CustomResponse> GetAll(PagingParams pagingParams)
         {
-            var result = _unitOfWork.EmployeeRepository
+            var result = await _unitOfWork.EmployeeRepository
                                     .GetAll()
                                     //.Where() // could create your own serch class by inherit from PagingParams to filter data based on your Params
-                                    .GetPaged<EmployeeDto,GetAllEmployeeModel>(pagingParams, _mapper);
+                                    .GetPagedAsync<EmployeeDto,GetAllEmployeeModel>(pagingParams, _mapper);
             return new OkResponse(result);
         }
     }
