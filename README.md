@@ -81,3 +81,5 @@ to add these varables:
 ***In Startup you need to inherit core startup class and configure your project setting(dependencies resolver,mappers,database etc)***
 
 
+Postman collection link that wrapp this project apis https://www.storeakmedia.com/theme/GitStoreakDemoApi/Storeak.Demo.Api.postman_collection.json
+
