@@ -1,6 +1,6 @@
-# **Tatweerak Guide Task (Web Api Project)**
+# **Storeak Demo API (Web Api Project)**
 
-In this task, you will develop a set of REST APIs capable of reading a JSON data deployed
+In this demo, you will see a set of REST APIs capable of reading a JSON data deployed
 on a server and returning information by using a collection of simple HTTP requests using postman.
 
 # **Nuget Package Requirement:**
@@ -16,19 +16,26 @@ You need to install a storeak nuget package (Storeak.Api.Core) using link https:
 
 This package will help us to avoid repeated code thats need in every api project and make projects fast development.
 
-# **Database Configuration:**
+# **Database & Environment Configuration:**
 
 You need to create environment variable for making connection string. Storeak Core nuget package get these variables and make connection string for your project.
 
-* AzurePool_DataSource: Database Server Name
+to add these varables:
+* run "edit the system environment variables" from start menu
+
+![alt text](https://www.storeakmedia.com/theme/GitStoreakDemoApi/env.png)
+
+* Click on "Environment Variables" button
+
+* Under System variables add the following:
+
+> AzurePool_DataSource: Database Server Name
  
-* AzurePool_UserID :  Database Server User Id
+> AzurePool_UserID :  Database Server User Id
  
-* AzurePool_Password:  Database Server Password
+> AzurePool_Password:  Database Server Password
  
-* ENVIRONMENT : LocalHost
- 
-* Enco: set to empty
+> Enco: set to empty
 
 # **Project Folder Structure (Demo project):**
 > 
