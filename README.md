@@ -29,10 +29,10 @@ to add these varables:
 
 * Under System variables add the following:
 
-> AzurePool_DataSource: Database Server Name
-> AzurePool_UserID :  Database Server User Id
-> AzurePool_Password:  Database Server Password
-> Enco: set to empty
+> * **AzurePool_DataSource** : Database Server Name
+> * **AzurePool_UserID** :  Database Server User Id
+> * **AzurePool_Password** :  Database Server Password
+> * **enco**: set to empty
 
 # **Project Folder Structure (Demo project):**
 > 
