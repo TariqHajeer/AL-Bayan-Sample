@@ -32,70 +32,46 @@ You need to create environment variable for making connection string. Storeak Co
 
 # **Project Folder Structure (Demo project):**
 > 
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_920cb11d4557f2b1805ffbc5abe3bd9e.png)
 
 
 ***In wwwroot folder you need to create xml file in App_Data folder that handle multilanguage messages.***
 
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_1ed641d5081bcd17038794070c82ac8a.png)
-
+> 
 
 ***In Business Use Cases you need to create (Create,Update,Delete) Operations***
 
 > 
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_345999ab51369d83d70ad40cd25acdb9.png)
-> 
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_7cbcfd941b5c5b6bc042a069a31b374a.png)
-> 
-
 
 ***In Queries you need to create select operations.***
 
 
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_f257d157d33688fc951cbf865e63602c.png)
-
+> 
 
 ***In Unit of work you need to create repositories.***
 > 
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_080092f3ff2dce6a532e9cb064b764bb.png)
-
+> 
 ***In Controller you need to create all apis crud.***
-
-![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_c7b66e792465c1b40ee08d418767e629.png)
-
 
 
 
 ***In DataModel you need to create database entities(DTO).***
 > 
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_7339419c3618acfb30790fe4b1643144.png)
-> 
 
 ***In Mapping you need to create configuration of entities.***
 
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_be963911f4c2ac434b7f51e3d832c346.png)
 
 ***In News context you need to create project db context and inherit with core store db context class to inherit all db methods for database interaction.***
 
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_13bc5497fcbf3cad1fac56d2d7b7ce5a.png)
 
 ***In ResponseMessage you need to add messages variables that return message based on language (Multilanguage handling).***
-
-![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_f4657dcca0b9dbef69e7f99ea03567be.png)
 
 
 ***In Models you need to create Api Response models.***
 
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_33ac042e031b40c38bd713cc9ed8e5c5.png)
-
 ***In MapperProfile you need to add mapping of entities using automapper.***
-
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_319eccbd75d3c5619dd2a079ae717d56.png)
 
 
 ***In Startup you need to inherit core startup class and configure your project setting(dependencies resolver,mappers,database etc)***
-
-> ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_5d35f9bf19e25d0e2a4c7dd479f20f6e.png)
 
 
 # **Ecommerce Project requirement**:
