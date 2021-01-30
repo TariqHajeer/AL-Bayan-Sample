@@ -31,4 +31,8 @@
     <ar>تم حذف معلومات الموضف بنجاح.</ar>
     <en>Employee info deleted successfully.</en>
   </Message>
+  <Message Code="Demo400EHRR" Name="EmployeeHasRelatedRecords" Status="BadRequest">
+    <ar>هنالك بعض القيود المتعلقة.</ar>
+    <en>Employee has some related records.</en>
+  </Message>
 </Messages>
