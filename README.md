@@ -34,9 +34,10 @@ to add these varables:
 > * **AzurePool_Password** :  Database Server Password
 > * **enco** : set to empty
 
+* Then create SQL Server Database by running **Update-Database** command from **Package Manager Console** in VS
+
 # **Project Folder Structure (Demo project):**
 > 
-
 
 > * **wwwroot/App_Data** have xml file that handle multilanguage messages.
 > * **Application/BusinessUseCases** have (Create,Update,Delete) Operations
