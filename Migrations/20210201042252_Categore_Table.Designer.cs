@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Storeak.Demo.Api.Infrastructure;
 
 namespace Storeak.Demo.Api.Migrations
 {
     [DbContext(typeof(DemoContext))]
-    partial class DemoContextModelSnapshot : ModelSnapshot
+    [Migration("20210201042252_Categore_Table")]
+    partial class Categore_Table
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -99,68 +101,11 @@ namespace Storeak.Demo.Api.Migrations
                     b.ToTable("Employees");
                 });
 
-            modelBuilder.Entity("Storeak.Demo.Api.Infrastructure.DataModel.ItemDto", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<decimal>("BuyPrice")
-                        .HasColumnType("Money");
-
-                    b.Property<Guid>("CategorieId");
-
-                    b.Property<int>("Count");
-
-                    b.Property<string>("CreatedBy")
-                        .IsRequired();
-
-                    b.Property<DateTime>("CreatedDate");
-
-                    b.Property<string>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedDate");
-
-                    b.Property<DateTime?>("ExpiryDate");
-
-                    b.Property<bool>("IsActive");
-
-                    b.Property<bool>("IsDeleted");
-
-                    b.Property<string>("ModifiedBy");
-
-                    b.Property<DateTime?>("ModifiedDate");
-
-                    b.Property<decimal>("SellPrice")
-                        .HasColumnType("Money");
-
-                    b.Property<long>("StoreId");
-
-                    b.Property<string>("UPC")
-                        .IsRequired();
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategorieId");
-
-                    b.HasIndex("UPC")
-                        .IsUnique();
-
-                    b.ToTable("Items");
-                });
-
             modelBuilder.Entity("Storeak.Demo.Api.Infrastructure.DataModel.CategorieDto", b =>
                 {
                     b.HasOne("Storeak.Demo.Api.Infrastructure.DataModel.CategorieDto", "Categorie")
                         .WithMany("Categories")
                         .HasForeignKey("CategorieId");
-                });
-
-            modelBuilder.Entity("Storeak.Demo.Api.Infrastructure.DataModel.ItemDto", b =>
-                {
-                    b.HasOne("Storeak.Demo.Api.Infrastructure.DataModel.CategorieDto", "Categorie")
-                        .WithMany()
-                        .HasForeignKey("CategorieId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
